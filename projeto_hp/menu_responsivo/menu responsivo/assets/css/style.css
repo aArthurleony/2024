@@ -1,0 +1,261 @@
+/*nav bar e mobile menu*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    background-image: url(../img/castle.jpg);
+    background-color: rgba(0, 0, 0, 0.80);
+}
+
+.corpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:80vh ;
+}
+
+header {
+    background-color: #242633;
+    box-shadow: 0px 3px 10px #000;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo:hover{
+    animation-duration: 1s;
+    animation-name: shake;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 10px;
+}
+.nav-item :hover{
+    background-color:rgb(57, 47, 122);
+    transition: 0.2s;
+}
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #6b63b5;
+    margin: 5px 0px 0px 5px;
+}
+/*hover do botao cadastrar e login*/
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.login-button :hover{
+    background-color:rgb(57, 47, 122);
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}
+.logo {
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 60px;
+    height: 60px;
+}
+/*nav bar e mobile menu*/   
+/*login*/
+
+  .form {
+    /* background: #FFFFFF; */
+    color: white;
+    max-width: 360px;
+    padding: 45px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+
+  }
+  .form input {
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius:15px;
+    
+  }
+  .form button {
+    text-transform: uppercase;
+    outline: 0;
+    background-color: #6b63b5;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    border-radius:15px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+.form button:hover{
+    background-color:rgb(57, 47, 122);
+}
+.h1-login{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.crieACC{
+    color: white;
+}
+.crieACC:hover{
+    color: #6b63b5;
+    transition: 0.2s;
+}
+#personagens-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px;
+    padding: 20px;
+    margin: auto;
+    max-width: 1200px; 
+}
+
+#personagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px; /* Adicione um espaço no topo para melhorar a aparência */
+}
+
+.personagem-box {
+    text-align: center;
+    background-color: #242633;
+    color: #fff; /* Cor do texto */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.33% - 40px); /*serve para deixar apenas 3 personagens por linha*/
+    margin: 20px;
+}
+
+.personagem-box img {
+    max-width: 100%;
+    height: 200px; 
+    /* object-fit: cover; Garante que as imagens mantenham a proporção e preencham o espaço disponível */
+    border-radius: 8px;
+}
+
+.personagem-box h2 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+/*botão "Próxima Página" */
+#proxima-pagina, #pagina-anterior {
+    background-color: #6b63b5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#proxima-pagina:hover, #pagina-anterior:hover {
+    background-color: #574f9f;
+}
+#botoes-pgn {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+#botoes-pgn button {
+    margin: 0 10px;
+}

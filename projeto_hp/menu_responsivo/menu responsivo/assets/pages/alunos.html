@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/aluno.css">
+    <title>Harry Potter API Alunos</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="divlogo">
+                <a href="/menu_responsivo/menu responsivo/index.html"><img src="../img/logo.png" alt=" "class="logo"></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="/menu_responsivo/menu responsivo/index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="./person.html" class="nav-link">Personagens</a></li>
+                    <li class="nav-item"><a href="./alunos.html" class="nav-link">Alunos</a></li>
+                    <li class="nav-item"><a href="./cajados.html" class="nav-link">funcionários de Hogwarts</a></li>
+                    <li class="nav-item"><a href="./feiticos.html" class="nav-link">Feitiços</a></li>
+                    <li class="nav-item"><a href="./casas.html" class="nav-link">Casas</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="/menu_responsivo/menu responsivo/index.html" class="btnlogin">Entrar</a></button>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="/menu_responsivo/menu responsivo/assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="./person.html" class="nav-link">Personagens</a></li>
+                <li class="nav-item"><a href="./alunos.html" class="nav-link">Alunos de Hogwarts</a></li>
+                <li class="nav-item"><a href="./cajados.html" class="nav-link">funcionários de Hogwarts</a></li>
+                <li class="nav-item"><a href="./feiticos.html" class="nav-link">Feitiços</a></li>
+                <li class="nav-item"><a href="./casas.html" class="nav-link">Casas</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="alunos" class="alunos-container">
+        <!-- alunos  -->
+    </div>
+    <div id="botoes-pgn">
+        <button id="pagina-anterior" class="pagina-anterior">Página Anterior</button>
+        <button id="proxima-pagina" class="proxima-pagina">Próxima Página</button>
+    </div>
+    <div class="filtro-classe">
+        <label for="classe">Filtrar por Classe:</label>
+        <select id="classe" name="classe">
+            <option value="all">Todas as Classes</option>
+            <option value="Gryffindor">Grifinória</option>
+            <option value="Hufflepuff">Lufa-Lufa</option>
+            <option value="Ravenclaw">Corvinal</option>
+            <option value="Slytherin">Sonserina</option>
+        </select>
+    </div>
+    <script src="../js/alunos.js"></script>
+</body>
+
+</html>

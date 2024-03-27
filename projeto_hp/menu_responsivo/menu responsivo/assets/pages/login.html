@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Harry potter api login</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="divlogo">
+                <a href="/menu_responsivo/menu responsivo/index.html"><img src="../img/logo.png" alt=" "class="logo"></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="/projeto_hp/menu_responsivo/menu responsivo/index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="./person.html" class="nav-link">Personagens</a></li>
+                    <li class="nav-item"><a href="./alunos.html" class="nav-link">Alunos</a></li>
+                    <li class="nav-item"><a href="./cajados.html" class="nav-link">Funcionários de Hogwarts</a></li>
+                    <li class="nav-item"><a href="./feiticos.html" class="nav-link">Feitiços</a></li>
+                    <li class="nav-item"><a href="./casas.html" class="nav-link">Casas
+                    </a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="assets/pages/login.html" class="btnlogin">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <!-- menu mobile -->
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="./index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="./assets/pages/person.html" class="nav-link">Personagens</a></li>
+                <li class="nav-item"><a href="./assets/pages/alunos.html" class="nav-link">Alunos</a></li>
+                <li class="nav-item"><a href="./assets/pages/cajados.html" class="nav-link">Funcionários de hogwarts</a></li>
+                <li class="nav-item"><a href="./assets/pages/feiticos.html" class="nav-link">Feitiços</a></li>
+                <li class="nav-item"><a href="./casas.html" class="nav-link">Casas
+            </ul>
+        </div>
+    </header>
+    <!--fim do menu mobile-->
+    <main class="corpo">
+        <div class="login-box">
+            <div class="form">
+                <h1 class="h1-login">Login</h1>
+              <form class="login-form">
+                <input type="text" placeholder="username"/>
+                <input type="password" placeholder="password"/>
+                <button>login</button>
+                <p class="message">Não registrado? <a href="/projeto_hp/menu_responsivo/menu responsivo/index.html" class="crieACC">Crie uma conta</a></p>
+              </form>
+            </div>
+        </div>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+</html>
