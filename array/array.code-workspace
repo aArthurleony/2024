@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../exercicios1ponto"
+		},
+		{
+			"path": "../testepratico"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "array",
+		"liveServer.settings.port": 5501
+	}
+}
